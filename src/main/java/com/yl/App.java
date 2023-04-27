@@ -32,6 +32,7 @@ public class App
             System.exit(0);
         }
         Cookie cookie = new Cookie();
+        cookie.readCookieFile(fullFilePath); //need this to readfile and add text to cookie.txt
 
         //establish server
         ServerSocket server = new ServerSocket(Integer.parseInt(port));

@@ -42,7 +42,7 @@ public class Cookie {
         Random random = new Random();
 
         //check if cookies collection are loaded, else get random cookie
-        if (cookie.isEmpty()){
+        if (cookie == null){
             return "There are no cookies in the jar.";
         }else{
             String randomCookie = cookie.get(random.nextInt(cookie.size()));
